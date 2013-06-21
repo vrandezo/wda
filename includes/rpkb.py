@@ -60,7 +60,7 @@ class RPKB(revisionprocessor.RevisionProcessor):
 
 	# writes an item in KB syntax to the output file
 	def __write(self,id, val):
-		self.output.write(val)
+		self.output.write(str(val))
 		# TODO actually transform
 		
 	# writes a property in KB syntax to the output file
