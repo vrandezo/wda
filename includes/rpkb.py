@@ -59,12 +59,12 @@ class RPKB(revisionprocessor.RevisionProcessor):
 		revisionprocessor.RevisionProcessor.endPageBlock(self)
 
 	# writes an item in KB syntax to the output file
-	def __write(id, val):
+	def __write(self,id, val):
 		self.output.write(val)
 		# TODO actually transform
 		
 	# writes a property in KB syntax to the output file
-	def __writeProperty(id, val):
+	def __writeProperty(self,id, val):
 		self.__write(id, val)
 		# TODO add property type
 
