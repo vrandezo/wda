@@ -24,7 +24,7 @@ dp.registerProcessor(revisionprocessor.RPStats()) # Gather basic statistics
 rpedcount = rpedit.RPEditCount(ph) # Count edits by day and edits by user
 dp.registerProcessor(rpedcount)
 output = open('kb.txt', 'w')
-kbwriter = rpkb.RPKB(output)
+kbwriter = rpkb.RPKB(ph,output)
 dp.registerProcessor(kbwriter)
 #dp.registerProcessor(revisionprocessor.RPDebugLogger()) # Only for debugging
 
